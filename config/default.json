@@ -1,0 +1,9 @@
+{
+  // Configure dbname and collection name 
+  "Myapp": {
+    "dbConfig": {
+      "dbURL":"mongodb://db_1:27017/", // change db_1 to localhost for connecting mongoDB locally
+      "dbName": "contactlist"
+    }
+  }
+}
