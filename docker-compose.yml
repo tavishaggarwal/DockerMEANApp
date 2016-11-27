@@ -2,12 +2,14 @@
 version: '2'
 
 services:
-  meanstack:
-    image: meanstack:latest
-    build:
-      context: .
-      dockerfile: dockerfile
-    environment:
-      NODE_ENV: production
+  db: 
+    image: mongo
+    ports: 
+      - 27017:27017
+
+  DockerizeMEANapp:
+    image: tavishagg/meanstack
     ports:
       - 3000:3000
+    links:
+      - db:db_1

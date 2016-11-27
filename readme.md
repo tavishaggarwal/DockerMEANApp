@@ -2,6 +2,7 @@ Docker Commands:
 - docker images : To view all docker repositories available on local
 - docker ps : To view all containers running locally
 - docker ps -l : To view last container created
+- docker ps -a : To view all container created
 - docker rm <name> : to remove docker container
 - docker rmi <id> : To remove docker image
 
@@ -11,3 +12,5 @@ Docker Commands:
 Reference: https://blog.giantswarm.io/getting-started-with-docker-and-meanjs/
 
 - docker push <Repository name> : Command to push docker image to docker hub
+
+- docker-compose up: Commnd to start multiple docker files
